@@ -16,6 +16,7 @@ let Attemp =0;
 let Attemp1 =0;
 
 player1btn.addEventListener('click',function(){
+    errorAndresult.innerHTML =''
    let p1N= player1Number.value;
    if(Boolean(p1N-10) && p1N!=''){
       if(p1N < 10 ){
@@ -27,9 +28,11 @@ player1btn.addEventListener('click',function(){
    }else{
        errorAndresult.innerHTML= 'Please Give me a Number '
    }
+ 
 })
 
 player2btn.addEventListener('click',function(){
+
     Attemp++
     let p1N= player1Number.value
     let p2N= player2Number.value;
